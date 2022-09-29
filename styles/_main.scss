@@ -1,4 +1,67 @@
 main {
+  max-width: 104.8rem;  //10px = 1rem
+
   display: flex;
+  flex: 1;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    font-size: 12.8rem;
+    line-height: 12.8rem; //128px ou 12.8rem  -imita o font-size 
+    letter-spacing: -1.24rem; //converge para 12.4px
+    color: var(--white);
+  }
+
+  .buttons {
+    margin-top: 6.4rem;
+
+
+    display: flex;
+    align-items: center;
+
+    > button {
+      background-color: var(--white);
+      color: var(--black);
+      border-radius: 0.4rem;
+
+      margin: 1.2rem;
+      padding: 1.5rem 4.5rem;
+      border: 0.1rem solid var(--white);
+
+      font-size: 1.6rem;
+      font-weight: 500;
+
+      cursor: pointer;
+      transition: .2s ease-in;
+
+      &.outlined {
+        background: transparent;
+        color: var(--gray);
+        border: 0.1rem solid var(--gray);
+      }
+
+      &:hover {
+        background: transparent;
+        color: var(--white);
+        border: 0.1rem solid var(--gray);
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 6.4rem; // 64px
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.04rem;
+
+  }
+
 }
